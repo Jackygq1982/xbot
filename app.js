@@ -8,7 +8,7 @@ var https_options = {
   certificate: fs.readFileSync('xbot.crt')
 };
 var server = restify.createServer(https_options);
-server.listen(process.env.port || process.env.PORT || 1337 , function () {
+server.listen(process.env.port || process.env.PORT || 443 , function () {
    console.log('%s listening to %s', server.name, server.url);
 });
 
